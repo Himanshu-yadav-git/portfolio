@@ -34,7 +34,7 @@ body {
 
 .nav_bar{
     height: 90px;
-    width: 1550px;
+    width: 100%;
     color: var(--text);
     background-color: var(--background);
     padding: 20px 35px 20px 35px;
@@ -94,7 +94,7 @@ a {
 }
 
 .hero {
-    width: 1320px;
+    width: 100%;
     height: 739px;
     font-size: 16px;
     margin: 0px 6.2px 0 6.2px;
@@ -273,7 +273,7 @@ span {
     height: 112px;
     width: 650px;
     font-size: 45px;
-    margin: 0 0 90px 0;
+    margin: 0 0 80px 0;
 }
 
 .about_text p {
@@ -325,4 +325,114 @@ span {
     height: 22px;
     width: 25px;
     font-size: 13px;
+    font-weight: 900;
+} 
+
+.section_skills {
+    height: 700px;
+    width: 1520px;
+    padding: 110px 65px 110px 65px;
+    background-color: var(--background-light);
+}
+
+.section_label {
+    height: 20.4px;
+    width: 1180px;
+}
+
+.section_heading h2 {
+    height: 50px;
+    width: 1180px;
+    font-size: 45px;
+    margin: 15px 0 0 0;
+}
+
+.skills_grid {
+
+    width: 1180px;
+    height: 330px;
+    margin: 0 6.2px 0 6.2px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 90px;
+    left: 80px;
+    gap: 20px;
+}
+
+.skill_card {
+
+    height: 153px;
+    width: 580px;
+    padding: 28px;
+    background-color: var(--card);
+    border-radius: 10px;
+}
+
+.skill_top {
+
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px 0;
+}
+
+.skill_top h3 {
+    height: 32px;
+    width: 66px;
+}
+
+.skill_top span {
+    height: 26px;
+    width: 62px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid var(--primary);
+    align-items: center;
+    color: var(--primary-light);
+}
+
+.skill_card p {
+    height: 23px;
+    font-size: 14px;
+    width: 521px;
+    color: var(--text-muted);
+}
+
+.skill_bar {
+    width: 521px;
+    height: 3px;
+    background-color: #24334C;
+    border-radius: 100px;
+    position: relative;
+    top: 22px;
+    border-radius: 50px;
+}
+
+.skill_progress_python {
+    height: 5px;
+    width: 338px;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+
+.skill_progress_html {
+    height: 5px;
+    width: 500px;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+
+.skill_progress_css {
+    height: 5px;
+    width: 200px;
+    background-color: var(--primary);
+    border-radius: 50px;
+}
+
+.skill_progress_dsa {
+    height: 5px;
+    width: 150px;
+    background-color: var(--primary);
+    border-radius: 50px;
 }
