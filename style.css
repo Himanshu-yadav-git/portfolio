@@ -7,6 +7,7 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    overflow-x: hidden;
 }
 
 :root {
@@ -435,4 +436,71 @@ span {
     width: 150px;
     background-color: var(--primary);
     border-radius: 50px;
+}
+
+.project_card {
+    height: 340px;
+    width: 378px;
+    padding: 30px;
+    background-color: var(--card);
+    position: relative;
+    top: 70px;
+    left: 20px;
+    border-radius: 25px;
+    border: 1px solid var(--primary-light);
+}
+
+.project_number {
+    height: 18px;
+    width: 317px;
+    font-size: 11px;
+    color: var(--primary);
+    font-weight: 900;
+    margin: 0 0 35px 0;
+}
+
+.project_card h3 {
+    width: 317px;
+    height: 40.8px;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+}
+
+.project_card p {
+    color: var(--text-muted);
+    height: 95px;
+    width: 317px;
+    font-size: 14px;
+}
+
+.project_footer {
+    height: 50px;
+    width: 317px;
+    padding: 30px 0 0 0;
+    margin: 23.3px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project_footer span {
+    font-size: 12px;
+    height: 20px;
+    width: 40px;
+    color: var(--text-light);
+}
+
+.project_footer a {
+    height: 20px;
+    width: 120px;
+    font-size: 12px;
+    color: var(--primary);
+    font-weight: 900;
+}
+
+.project_grid {
+    height: 340px;
+    width: 1180px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
 }
