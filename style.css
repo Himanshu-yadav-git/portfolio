@@ -42,13 +42,13 @@ body {
     font-size: 16px;
     display: flex;
     justify-content: space-around;
-    border-bottom: 1px solid var(--primary-light);
+    border-bottom: 1px solid var(--border);
     position: fixed;
     z-index: 10;
 }
 
 .logo{
-    height: 130px;
+    height: 50px;
     width: 44px;
     font-size: 26px;
     text-decoration: none;
@@ -198,7 +198,8 @@ span {
     border-top-right-radius: 10px;
     padding: 10px 0 0 0;
     flex-direction: row;
-    border-bottom: 2px solid var(--card);
+    border-bottom: 2px solid var(--border);
+    border-top: 2px solid var(--border);
 
 }
 
@@ -233,6 +234,9 @@ span {
     border-bottom-right-radius: 10px;
     font-size: smaller;
     font-weight: 100;
+    border-left: 2px solid var(--border);
+    border-bottom: 2px solid var(--border);
+    border-right: 2px solid var(--border);        
 }
 
 .purple {
@@ -307,7 +311,7 @@ span {
     height: 130px;
     width: 560px;
     padding: 20px 0 20px 0;
-    border-top: 1px solid var(--primary);
+    border-top: 1px solid var(--border);
     display: flex;
     flex-direction: column;
 }
@@ -368,6 +372,7 @@ span {
     padding: 28px;
     background-color: var(--card);
     border-radius: 10px;
+    border: 2px solid var(--border);
 }
 
 .skill_top {
@@ -388,7 +393,7 @@ span {
     font-size: 10px;
     display: flex;
     justify-content: center;
-    border: 1px solid var(--primary);
+    border: 2px solid var(--border);
     align-items: center;
     color: var(--primary-light);
 }
@@ -447,7 +452,7 @@ span {
     top: 70px;
     left: 20px;
     border-radius: 25px;
-    border: 1px solid var(--primary-light);
+    border: 1px solid var(--border);
 }
 
 .project_number {
@@ -518,7 +523,7 @@ span {
     width: 1180px;
     background-color: var(--card);
     border-radius: 10px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--border);
     position: relative;
     top: 70px;
     left: 70px;
@@ -574,4 +579,106 @@ span {
     height: 47px;
     width: 650px;
     margin: 18px 0 0 0;
+}
+
+.contact_section {
+    height: 561px;
+    width: 1262px;
+    padding: 120px 70px 120px 70px;
+    text-align: center;
+}
+
+.contact_content {
+    height: 320px;
+    width: 700px;
+    text-align: center;
+}
+
+.contact_content h2 {
+    height: 125px;
+    width: 1180px;
+    font-size: 52px;
+    margin: 18px 0 18px 0;
+    text-align: center;
+    position: relative;
+    left: 110px;
+}
+
+.section_label1 {
+    width: 1180px;
+    height: 20px;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    left: 80px;
+}
+
+.para {
+    width: 700px;
+    height: 51px;
+    font-size: 15px;
+    color: var(--text-muted);
+    margin: 0 0 30px 0;
+    text-align: center;
+    position: relative;
+    left: 330px;
+    bottom: 30px;
+}
+
+.contact_buttons {
+    width: 1300px;
+}
+
+.primary_button1 {
+    height: 50px;
+    width: 177px;
+    color: var(--background);
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-weight: 700;
+    position: relative;
+    left: 500px;
+    bottom: 30px;
+}
+
+.secondary_button1 {
+    display: flex;
+    height: 51px;
+    width: 116px;
+    border: 2px solid var(--border);
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    font-weight: 700;
+    border-radius: 10px;
+    position: relative;
+    left: 690px;
+    bottom: 80px;
+}
+
+.footer {
+    padding: 35px;
+    height: 150px;
+    background-color: #050914;
+}
+
+.footer-content {
+    max-width: 1180px;
+    margin: auto;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer p {
+    color: var(--text-muted);
+    font-size: 12px;
 }
