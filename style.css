@@ -49,11 +49,11 @@ body {
 
 .logo{
     height: 50px;
-    width: 44px;
+    width: 140px;
     font-size: 26px;
     text-decoration: none;
     color: var(--text);
-    font-weight: 750;
+    font-weight: 900;
 }
 
 span{
@@ -63,8 +63,17 @@ span{
 .nav_links {
     list-style: none;
     display: flex;
-    gap: 40px;
-    padding-top: 10px;
+    justify-content: center;
+}
+
+.nav_data {
+    height: 50px;
+    width: 550px;
+    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 40px 0 0;
+    text-align: center;
 }
 
 a {
@@ -99,12 +108,12 @@ a {
     height: 739px;
     font-size: 16px;
     margin: 0px 6.2px 0 6.2px;
-    padding: 100px 35px 100px 35px;
+    padding: 100px 130px 100px 130px;
     display: flex;
-    flex-wrap: wrap;
     position: relative;
     top: 80px;
     left: 40px;
+    gap: 0px;
 
 }
 
@@ -139,35 +148,49 @@ span {
     margin: 0 0 35px 0;
 }
 
+.hero_buttons {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    width: 320px;
+    gap: 20px;
+}
+
 .primary_button {
     background-color: var(--primary);
     color: #080d1b;
     height: 50px;
     width: 141px;
-    padding: 13px 22px 13px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     font-weight: 700;
 }
 
+.primary_button:hover {
+    transform: translate(0px, -3px);
+    transition-duration: 0.5s;
+    background-color: var(--primary-light);
+}
+
 .secondary_button {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary-light);
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     width: 150px;
-    padding: 12px 0 0 0;
     color: var(--text);
     font-weight: 500;
-    
-
 }
 
-.hero_buttons {
-    display: flex;
-    flex-wrap: wrap;
-    height: 50px;
-    gap: 20px;
+.secondary_button:hover {
+    transform: translate(0px, -3px);
+    transition-duration: 0.5s;
+    border: 1px solid (--primary);
 }
+
 
 .hero_social {
     height: 25px;
@@ -176,6 +199,12 @@ span {
     flex-direction: row;
     gap: 20px;
     margin: 35px 0 0 0;
+}
+
+.hero_social a:hover{
+    color: var(--primary);
+    text-decoration: underline;
+    transition: 0.5s;
 }
 
 .hero_card {
@@ -187,6 +216,11 @@ span {
     right: 20px;
     top: -80px;
     left: 50px;
+}
+
+.hero_card:hover {
+    transition: 0.5s;
+    transform: rotate(-7deg);
 }
 
 .window_header {
@@ -236,7 +270,8 @@ span {
     font-weight: 100;
     border-left: 2px solid var(--border);
     border-bottom: 2px solid var(--border);
-    border-right: 2px solid var(--border);        
+    border-right: 2px solid var(--border);
+    line-height: 31px;        
 }
 
 .purple {
